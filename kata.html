@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CodeWars Answers</title>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Coda:400,800|Cutive+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="kata.css">
+    </head>
+
+
+
+    <body>
+        <div class="tooltip">
+            <span class="help">?</span>
+            <span class="tooltiptext">Coding problems completed off of CodeWars that are called Kata. For more information <a target="_blank" href="https://www.codewars.com/about">Click Here.</a></span>
+        </div>
+
+        <h1>CodeWars Kata</h1>
+
+            <div class="kata-container">
+                <button class="kata-title"> Get the Middle Character  <span class="kyu">7kyu</span></button>
+                    <div class="wrapper">
+                        <div class="kata-answer">
+                            <small class="date">Completed on August 14, 2017</small>
+                            <br><br>
+                            <code>
+                                <pre>
+<span class="purple">function</span> <span class="blue">getMiddle</span><span class="orange">(word)</span>{
+      <span class="purple">var</span> length;
+     <span class="purple">var</span> position;
+
+     <span class="purple">if</span>(word.length  % <span class="orange">2</span> == <span class="orange">0</span>) {
+          length = <span class="orange">2</span>;
+          position = (word.length / <span class="orange">2</span>) - <span class="orange">1</span>;
+
+      } <span class="purple">elses</span> {
+           length = <span class="orange">1</span>;
+           position = word.length / <span class="orange">2</span>;
+        }
+      <span class="purple">return</span> word.substring(position, position + length);
+}
+                                </pre>
+                            </code>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="kata-container">
+                <button class="kata-title"> Complementary DNA <span class="kyu">7kyu</span></button>
+                    <div class="wrapper">
+                        <div class="kata-answer">
+                            <br><br>
+                            <code>
+                                <pre>
+<span class="purple">function</span> <span class="blue">DNAStrand</span><span class="orange">(dna)</span>{
+      <span class="purple">var</span> letters = dna.split;
+     <span class="purple">var</span> results = [];
+
+     <span class="purple">for</span><span class="purple">var</span> i =  <span class="orange">0</span> i < letters.length i++ ) {
+         <span class="purple">if</span> (letters[i] === <span class="green">"A"</span>){
+             result.push(<span class="green">"T"</span>);
+        <span class="purple">else if</span> (letters[i] === <span class="green">"T"</span>){
+             result.push(<span class="green">"A"</span>);
+             <span class="purple">else if</span> (letters[i] === <span class="green">"C"</span>){
+                 result.push(<span class="green">"G"</span>);
+                 <span class="purple">else if</span> (letters[i] === <span class="green">"G"</span>){
+                     result.push(<span class="green">"C"</span>);
+        }
+    }
+    <span class="purple">return</span> result.join(<span class="green">''</span>);
+                                </pre>
+                            </code>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="kata-container">
+                <button class="kata-title"> Simple Pig Latin  <span class="kyu five-six">5kyu</span></button>
+                    <div class="wrapper">
+                        <div class="kata-answer">
+
+                            <br><br>
+                            <code>
+                                <pre>
+<span class="purple">function</span> <span class="blue">pigIt</span><span class="orange">(str)</span>{
+     //Code here
+    <span class="purple"> var</span>  result = [];
+    <span class="purple"> var</span> arr = str.split(<span class="green"> ''</span> );
+    <span class="purple"> for</span> (<span class="purple"> var</span>  i = <span class="orange">0</span>; i < arr.length; i++){
+        result.push(arr[i].substr(<span class="orange">1</span>) + arr[i].substr(<span class="orange">0</span>, <span class="orange">1</span>) + <span class="green">"ay"</span>);
+    }//for
+     <span class="purple">return</span> result.join(" ");
+}//func
+                                </pre>
+                            </code>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+        <script type="text/javascript" src="kata.js"></script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+/* ==== GLOBAL === */
+
+body {
+    background-color: #262729;
+    color: #333;
+    font-family: monospace;
+}
+
+code {
+    font-family: 'Cutive Mono', monospace;
+}
+
+h1{
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    font-family: 'Coda', cursive;
+}
+
+button {
+    background-color: #454648;
+    color: #FFF;
+    width: 100%;
+    border:none;
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
+    font-family: 'Coda', cursive;
+}
+
+button:focus {
+    outline:none;
+}
+
+a {
+    text-decoration: none;
+    color: #a23127;
+}
+
+/* ==== HELP === */
+
+.help {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.help:hover {
+    color:#A23127;
+    cursor: pointer;
+}
+
+.tooltip {
+    position:absolute;
+    margin-left: 20px;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 9;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* ==== CONTAINER === */
+
+.wrapper {
+
+}
+
+.kata-container {
+    background-color:#FFF;
+    width: 350px;
+    height: 40px;
+    border-radius: 0 0 10px 10px;
+    transition: all .5s ease-in;
+    cursor:pointer;
+    margin: 5px 100px;
+}
+.kata-title {
+    font-size: 20px;
+    padding: 10px  0px;
+}
+
+.date {
+    font-size: 10px;
+    color: #a32525;
+    position: relative;
+    bottom: -20px;
+
+}
+
+.kata-answer {
+    width: 800px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .5s ease-in;
+    line-height: 1.5rem;
+    padding: 0px  70px;
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+}
+
+.kyu {
+ font-size: 14px;
+ margin-left: 10px;
+}
+
+
+/* ==== TOGGLE CLASSES === */
+
+.show {
+    visibility: visible;
+    opacity:1;
+    transform: scale(1);
+}
+
+.grow{
+    width: 750px;
+    height: 550px;
+}
+
+/* ==== COLORING === */
+.purple {
+    color: #b434db;
+}
+
+.blue {
+    color: #67b3ce;
+}
+
+.orange {
+    color:#d6521d;
+}
+
+.green {
+    color: #44d650;
+}
+
+.five-six {
+    color:#ECB613
+}
